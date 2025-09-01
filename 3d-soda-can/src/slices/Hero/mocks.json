@@ -1,0 +1,101 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Attempt"
+						}
+					}
+				]
+			},
+			"subheading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Duis consectetur aute duis in nisi ipsum aliqua aliqua incididunt exercitation nostrud do laborum. Fugiat elit in esse elit amet esse voluptate labore. Excepteur anim aliqua laborum elit dolore id mollit id ut est nisi qui."
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Voluptate pariatur do ullamco Lorem cillum mollit id aute ex sit culpa laboris proident velit. Occaecat mollit aliquip id quis Lorem id commodo magna nisi irure enim sit eu sit irure. Ullamco est deserunt non."
+						}
+					}
+				]
+			},
+			"button_text": {
+				"__TYPE__": "FieldContent",
+				"value": "buried",
+				"type": "Text"
+			},
+			"button_link": {
+				"key": "609e5360-ac58-4c0c-96a2-e032884eb51a",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com",
+					"text": "special"
+				}
+			},
+			"cans_image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+					"width": 4480,
+					"height": 4480
+				},
+				"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+				"width": 4480,
+				"height": 4480,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "complete",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"second_heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Labore ea anim dolor."
+						}
+					}
+				]
+			},
+			"second_body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Anim et incididunt occaecat ullamco sunt tempor sit esse enim eiusmod ea voluptate ipsum ad proident. Aliquip enim cupidatat culpa reprehenderit reprehenderit id in pariatur non in voluptate laborum ad cillum. Excepteur officia velit officia excepteur irure aute aliquip dolor."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
