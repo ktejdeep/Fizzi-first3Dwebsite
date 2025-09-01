@@ -58,7 +58,6 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
         overwrite: "auto",
       });
 
-      // Separate timeline for text animation
       gsap.timeline({
         scrollTrigger: {
           trigger: ".text-side-heading",
@@ -89,7 +88,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
   return (
     <Bounded data-slice-type={slice.slice_type} data-slice-variation={slice.variation} className="hero opacity-0" >
       {isDesktop && (
-          <View className="hero-scene pointer-events-none sticky top-0 z-50 -mt-[100vh] hidden w-screen h-screen md:block">
+          <View className="hero-scene pointer-events-none sticky top-0 z-[50] -mt-[100vh] hidden w-screen h-screen md:block">
             <Scene/>
             <Bubbles count={300} speed={1} repeat={true}/>
           </View>
@@ -117,17 +116,17 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
         </div>
 
 
-        <div className="grid text-side relative z-[80] h-screen items-center gap-4 mid:grid-cols-2">
+        <div className="grid text-side relative z-[80] h-screen items-center gap-0 mid:grid-cols-2">
 
           <PrismicNextImage className="w-full md:hidden" field={slice.primary.cans_image} />
 
           <div>
-            <h2 className="text-side-heading  w-300 text-balance text-8xl font-black uppercase text-sky-950 lg:text-10xl" >
+            <h2 className="text-side-heading text-balance text-3xl font-semibold uppercase text-sky-950 lg:text-9xl" >
               <TextSplitter text={asText(slice.primary.second_heading)}/>
               </h2>
           </div>
 
-          <div className="text-side-body mt-4 max-w-xl text-balance text-xl font-normal text-sky-950 ">
+          <div className="text-side-body mt-1 max-w-xl text-balance text-2xl font-normal text-sky-950 ">
             <PrismicRichText field={slice.primary.second_body} />
           </div>
 

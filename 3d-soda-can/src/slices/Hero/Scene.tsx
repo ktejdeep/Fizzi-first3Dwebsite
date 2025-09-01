@@ -27,17 +27,16 @@ const Scene = (props: Props) => {
 
   const Float_speed = 1.5;
 
-  // useGSAP handles dependency arrays and scoping for you
+
   useGSAP(() => {
-    // The refs should be ready here. The guard clause is good practice.
     if (
         !can1ref.current || !can2ref.current || !can3ref.current || 
         !can4ref.current || !can5ref.current
     ) return;
       
-    isReady(); // Set the store state to ready
+    isReady();
 
-    // These should now work perfectly! ✅
+
     gsap.to(can1ref.current.rotation, { duration: 0, z: -0.5 });
     gsap.to(can1ref.current.position, { duration: 0, x: -1.5 });
 
@@ -76,10 +75,10 @@ const Scene = (props: Props) => {
     });
     
     scrolltl
-    .to(groupRef.current.rotation, {y:Math.PI * 2}, 0)
+    // .to(groupRef.current.rotation, {y:Math.PI * 2}, 0)
 
       //can 1  -  black cherry
-    .to(can1ref.current.position, {y: -0.7, x: -0.2, z:-0.3}, 0)
+    .to(can1ref.current.position, {y: -0.4, x: -0.4, z:-0.3}, 0)
     .to(can1ref.current.rotation, {z:0.3}, 0)
 
       //can 1  -  black cherry
@@ -93,7 +92,7 @@ const Scene = (props: Props) => {
     .to(can4ref.current.position, {x:0.3,y:-0.3,z:-0.5}, 0)
     .to(can4ref.current.rotation, {z:0.3}, 0)
       //can 1  -  black cherry
-    .to(can5ref.current.position, {y: 0.5, x: 0.3,z: 0.4}, 0)
+    .to(can5ref.current.position, {y: 0.5, x: 0.3,z: 0.3}, 0)
     .to(can5ref.current.rotation, {z:-0.25}, 0)
 
     .to(groupRef.current.position, {x:1, duration:3,ease:"sine.inOut"}, 1.3); // Adjust the main group position if needed
