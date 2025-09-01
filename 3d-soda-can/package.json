@@ -11,6 +11,7 @@
     "start": "next start",
     "lint": "next lint",
     "slicemachine": "start-slicemachine",
+    "vercel-build": "npm install --legacy-peer-deps && next build",
     "format": "prettier --write ."
   },
   "dependencies": {
